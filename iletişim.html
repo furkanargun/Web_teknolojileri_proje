@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>İletişim</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"
+    </head>
+    <body>
+        <div class="container" style="background-color:rgb(0, 0, 0);text-align: center;">
+            <div class "row">
+                <div class="btn-group" style="background-color:rgb(15, 201, 62); " > 
+                    <a href="index.html"><button type="button" class="btn">HAKKINDA</button></a>
+                    <a href="iletişim.html"><button type="button" class="btn">İLETİŞİM</button></a>
+                    <a href="sehrim.html"><button type="button" class="btn">ŞEHRİM</button></a>
+                    <button type="button" class="btn">MİRASIMIZ</button>
+                    <button type="button" class="btn">BİZE ULAŞIN</button>
+                </div>
+            </div>
+        </div>
+        <form action="iletisim.php" method="POST">
+            <label>Adı Soyadı : </label> <input type="text" name="adsoyad" required><br><br>
+            <label>E posta : </label> <input type="email" name="email" placeholder="ör: isim@örnek.com"><br><br>
+            <label>Telefon : </label> <input type="text" name="tel" placeholder="ör: 05410000000" pattern=[0-9]{11}><br><br>
+            <label>Cinsiyet : </label><input type="radio" name="cinsiyet" value="e">Erkek <input type="radio" name="cinsiyet" value="k">Kadın<br><br>
+            <label>Bulunduğu İl : </label>
+            <select name="il" id="">
+                <option value="0">&#706;SEÇİNİZ&#707;</option>
+                <option value="20">Denizli</option>
+                <option value="35">İzmir</option>
+                <option value="34">İstanbul</option>
+            </select>
+            <br><br>
+            <input type="submit" value="GÖNDER">
+            <input type="reset" value="TEMİZLE">
+        </form>
+    </body>
+</html>
