@@ -1,6 +1,19 @@
-.logo{
-    height: 60px;
+.logo2{
+    height: 30px;
 }
+
+.logo{
+    height: 55px;
+}
+
 .yazilar{
     font-size: 15pt;   
+}
+div.sinir{
+
+    padding:25px;
+}
+div.resim-bir{
+    position:absolute;
+
 }

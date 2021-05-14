@@ -33,8 +33,14 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <!--liste menü oluşturup linleri oluşturuyoruz ms-auto soldan boşluk bırakım menüyü sağ tarafa kaydırıyor mx orta-auto sağdan-->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item px-4">
-                            <a href="sehrim.html" class="nav-link text-white">Şehrim</a>
+                        <li class="nav-item px-4 dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="denizli.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Şehrim</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="denizli.html">Denizli <img src="png/rooster.png" class="img-fluid logo2" alt="" /></a></li>
+                                <li><a class="dropdown-item" href="#">Mirasımız</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Takımlar <img src="png/denizlispor.png" class="img-fluid logo2" alt=""> <img src="png/denizli-basket.png" class="img-fluid logo2" alt=""></a></li>
+                            </ul>
                         </li>
                         <li class="nav-item px-4">
                             <a href="iletişim.html" class="nav-link text-white">İletişim</a>
@@ -43,45 +49,20 @@
                 </div>
             </div>
         </nav>
-        <!--
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">Denizli</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-items d-flex justify-content-between w-100">
-                        <div class="navbar-nav">
-                            <a class="nav-link" aria-current="page" href="index.html">Hakkında</a>
-                            <a class="nav-link" href="sehrim.html">Şehrim</a>
-                            <a class="nav-link" href="#">Mirasımız</a>
-                            <a class="nav-link" href="iletişim.html" tabindex="-1" aria-disabled="true">İletişim</a>
-                        </div>
-                        <a class="nav-link justify-content-end" href="#">Giriş</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        -->
-        <!--
-        <div class="container" style="background-color:rgb(0, 0, 0);text-align: center;">
-            <div class "row">
-                <div class="btn-group" style="background-color:rgb(15, 201, 62)" > 
-                    <a href="index.html"><button type="button" class="btn">HAKKINDA</button></a>
-                    <a href="iletişim.html"><button type="button" class="btn">İLETİŞİM</button></a>
-                    <a href="sehrim.html"><button type="button" class="btn">ŞEHRİM</button></a>
-                    <button type="button" class="btn">MİRASIMIZ</button>
-                    <button type="button" class="btn">BİZE ULAŞIN</button>
-                </div>
-            </div>
-        </div>-->
+
         <form>
-            <label>Adı Soyadı : </label> 
+            <label>Adı : </label> 
             <?php
-            if(isset($_POST["adsoyad"]))
-                echo $_POST["adsoyad"];
+            if(isset($_POST["ad"]))
+                echo $_POST["ad"];
+            else
+            echo "Hata var";
+            ?><br><br>
+            
+            <label>Soyadı : </label> 
+            <?php
+            if(isset($_POST["soyad"]))
+                echo $_POST["soyad"];
             else
             echo "Hata var";
             ?><br><br>
