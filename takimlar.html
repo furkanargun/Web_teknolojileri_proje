@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>İletişim</title>
+        <title>Takımımız</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-        <body>
+    <body id="bodyy">
         <!--navbar-expand-lg tam ekranda menü tuşunu kaldırmak için-->
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg text-white">
             <!---fluid boşuksuz-->
@@ -49,62 +49,48 @@
                 </div>
             </div>
         </nav>
+        <div class="row">
+            <div style="background-color: rgb(8, 164, 84);" class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    
+          
+                <a class="navbar-brand" href="takimlar-denizlispor.html">
+                    <!--<img src="png/denizlispor.png" class="img-fluid" alt="" />-->
+                    
+                    <img src="png/denizlispor.png" class="img-fluid pic" />
+                </a>
+                 
+            </div>
 
-        <form>
-            <label>Adı : </label> 
-            <?php
-            if(isset($_POST["ad"]))
-                echo $_POST["ad"];
-            else
-            echo "Hata var";
-            ?><br><br>
+            <div style="background-color: rgb(37, 33, 34); " class="col-xl-6 col-lg-6 col-md-6 col-sm-0 col-0">
+                <a class="navbar-brand" href="takimlar-basket.html">
+                    <img src="png/denizli-basket.png" class="img-fluid" alt="" />
+                </a>
+            </div>
+
+            <!--
+            <div class="col-xl-6 col-lg-6 col-md- col-sm-5 col-0 sinir">
+
+
+
+            </div>
             
-            <label>Soyadı : </label> 
-            <?php
-            if(isset($_POST["soyad"]))
-                echo $_POST["soyad"];
-            else
-            echo "Hata var";
-            ?><br><br>
+            <div class="col-xl-4 col-lg-2 col-md- col-sm-3 col-0 sinir">
 
-            <label>E posta : </label> 
-            <?php
-             if(isset($_POST["email"]))
-            echo $_POST["email"];
-            else
-            echo "Hata var";
-            ?><br><br>
 
-            <label>Telefon : </label> 
-            <?php
-             if(isset($_POST["tel"]))
-            echo $_POST["tel"];
-            else
-            echo "Hata var";
-            ?><br><br>
 
-            <label>Cinsiyet : 
-            </label><?php
-             if(isset($_POST["cinsiyet"]))
-                if($_POST["cinsiyet"]=="e") echo "Erkek";
-                else echo "Kadın";
-            else
-            echo "Hata var";
-            ?><br><br>
+            </div>
+            -->
 
-            <label>Bulunduğu İl : </label>
-            <?php
-             if(isset($_POST["il"]))
-            echo $_POST["il"];
-            else
-            echo "Hata var";
-            ?><br><br>
-        </form>
+
+
+        </div>
+
+
+
+
+
+
+        
         <script src="js/bootstrap.js"></script>
     </body>
 </html>
-<!--
-<?php
-echo "HOŞGELDİNİZ "."<b>".$_GET["adsoyad"]."<b>";
-?>
--->
