@@ -21,6 +21,23 @@
     opacity:0;
 }
 
+#hakkindaBody{
+    background-color: black;
+}
+#sehrimBody{
+    background-color: black;
+}
+#slider{
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+.figure-caption{
+    color: white;
+}
+.icerik{
+    color: white;
+}
 #bodyy{
     background-color: rgb(0, 0, 0) !important ;
 }
@@ -31,11 +48,16 @@
     height: 55px;
 }
 .yazilar{
-    font-size: 15pt;   
+    font-size: 15pt;
+    padding-right: 60px;
 }
 div.sinir{
-    padding:25px;
+    padding-top: 25px;
+    color: white;
+  
+
 }
+
 div.resim-bir{
     position:absolute;
 }
@@ -46,4 +68,42 @@ div.resim-bir{
 }
 #degisenresim:hover {
     background-image: url("png/denizlispor2.png");
+}
+#imgOrtaokul{
+    padding: 25px;
+}
+#imgLise{
+    padding: 25px;
+}
+
+#iletisimBody
+{
+        margin: 0 auto;
+        background:pink;
+}
+
+
+#form{
+
+    text-align: center;
+
+    margin: 0 auto;
+    max-width:960px;
+    background:#47D1FF;
+}
+
+.sporTable{
+    font-size: 14pt;
+    padding-bottom: 100px;
+    color: white;
+    
+ }
+.DSIcerik{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 25px;
+    color: white;
+}
+#denizlisporBody{
+    background-color: black;
 }

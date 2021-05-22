@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-    <body>
+    <body id="iletisimBody">
         <!--navbar-expand-lg tam ekranda menü tuşunu kaldırmak için-->
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg text-white">
             <!---fluid boşuksuz-->
@@ -83,61 +83,75 @@
                 </div>
             </div>
         </div>-->
+        <div id="form">
+            <script>
+                function validateForm(){
+                    var ad = document.forms["iletisim-form"]["ad"].value;
+                    if(ad==""){
+                        alert("Adı alanı boş bırakılamaz!");
+                        return false;
+                    }
+    
+                    var soyad = document.forms["iletisim-form"]["soyad"].value;
+                    if(soyad==""){
+                        alert("Soyadı alanı boş bırakılamaz!");
+                        return false;
+                    }
+                    
+                    var mail = document.getElementById("email").value;
+                    var regex = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
+                    if (regex.test(mail)==false){
+                        alert("Hata geçersiz mail adresi girdiniz!");
+                        return false;
+                    }
+                    
+                    var tel = document.getElementById("tel").value;
+                    var regex2 = /^[0-9]{11}$/;
+                    if (regex2.test(tel)==false){
+                        alert("Hata geçersiz telefon numarası girdiniz!");
+                        return false;
+                    }
+                   
+                    var konu = document.forms["iletisim-form"]["konu"].value;
+                    if(konu==""){
+                        alert("Konu alanı boş bırakılamaz!");
+                        return false;
+                    }
 
-        <script>
-            function validateForm(){
-                var ad = document.forms["iletisim-form"]["ad"].value;
-                if(ad==""){
-                    alert("Adı alanı boş bırakılamaz!");
-                    return false;
+                    var mesaj = document.forms["iletisim-form"]["mesaj"].value;
+                    if(mesaj==""){
+                        alert("Mesaj alanı boş bırakılamaz!");
+                        return false;
+                    }
+    
+    
+    
                 }
+            </script>
+    
+            <form name="iletisim-form" onsubmit="return validateForm()" action="iletisim.php" method="POST">
+                <br>
+                <label>Adı: </label> <input id="ad" type="text" name="ad"><br><br>
+                <label>Soyadı: </label> <input id="soyad" type="text" name="soyad"><br><br>
+                <label>E posta: </label> <input id="email" type="text" name="email" placeholder="ör: isim@örnek.com"><br><br>
+                <label>Telefon: </label> <input id="tel" type="text" name="tel" placeholder="ör: 05410000000"><br><br>
+                <label>Cinsiyet: </label><input type="radio" name="cinsiyet" value="e">Erkek <input type="radio" name="cinsiyet" value="k">Kadın<br><br>
+                <label>Bulunduğu İl: </label>
+                <select name="il" id="">
+                    <option value="0">&#706;SEÇİNİZ&#707;</option>
+                    <option value="20">Denizli</option>
+                    <option value="35">İzmir</option>
+                    <option value="34">İstanbul</option>
+                </select>
+                <br><br>
+                <label>Konu: </label> <input id="konu" type="text" name="konu"><br><br>
+                <label>Message: </label> <br> <textarea name="mesaj" rows="10" cols="30"></textarea><br><br>
+                <input type="submit" value="GÖNDER">
+                <input type="reset" value="TEMİZLE">
+            </form>
 
-                var soyad = document.forms["iletisim-form"]["soyad"].value;
-                if(soyad==""){
-                    alert("Soyadı alanı boş bırakılamaz!");
-                    return false;
-                }
-                
-                var mail = document.getElementById("email").value;
-                var regex = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
-                if (regex.test(mail)==false){
-                    alert("Hata geçersiz mail adresi girdiniz!");
-                    return false;
-                }
-                
-                var tel = document.getElementById("tel").value;
-                var regex2 = /^[0-9]{11}$/;
-                if (regex2.test(tel)==false){
-                    alert("Hata geçersiz telefon numarası girdiniz!");
-                    return false;
-                }
-               
-               
-
-
-            }
-        </script>
-
-        <form name="iletisim-form" onsubmit="return validateForm()" action="iletisim.php" method="POST">
-            <br>
-            <label>Adı: </label> <input id="ad" type="text" name="ad"><br><br>
-            <label>Soyadı: </label> <input id="soyad" type="text" name="soyad"><br><br>
-            <label>E posta: </label> <input id="email" type="text" name="email" placeholder="ör: isim@örnek.com"><br><br>
-            <label>Telefon: </label> <input id="tel" type="text" name="tel" placeholder="ör: 05410000000"><br><br>
-            <label>Cinsiyet: </label><input type="radio" name="cinsiyet" value="e">Erkek <input type="radio" name="cinsiyet" value="k">Kadın<br><br>
-            <label>Bulunduğu İl: </label>
-            <select name="il" id="">
-                <option value="0">&#706;SEÇİNİZ&#707;</option>
-                <option value="20">Denizli</option>
-                <option value="35">İzmir</option>
-                <option value="34">İstanbul</option>
-            </select>
-            <br><br>
-            <label>Konu: </label> <input id="konu" type="text" name="konu"><br><br>
-            <label>Message: </label> <br> <textarea name="mesaj" rows="10" cols="30"></textarea><br><br>
-            <input type="submit" value="GÖNDER">
-            <input type="reset" value="TEMİZLE">
-        </form>
+        </div>
+       
 
         
 
