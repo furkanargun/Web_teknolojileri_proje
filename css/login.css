@@ -1,0 +1,83 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #2234ae;
+    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+.login-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.login-inputs {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-inputs h1{
+    font-size: 3rem;
+    font-family: "Segoe UI", sans-serif;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 60px rgba(255,255,255,0.3);
+    color: #fff;
+}
+.login-inputs form{
+    background: #161631;
+    box-shadow: 4px 4px 60px rgba(255,255,255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-inputs form input{
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    background: #48484e;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 10px;
+    outline: none;
+}
+.login-inputs form input::placeholder{
+    color: #81818b;
+}
+.login-inputs form button{
+    text-transform: uppercase;
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #2b60d3;
+}
+.forget{
+    margin: 20px;
+    color: #62627d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border-bottom:1px solid #62627d;
+}

@@ -4,6 +4,7 @@
         <title>Şehrim</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Comatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
@@ -12,11 +13,7 @@
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg text-white">
             <!---fluid boşuksuz-->
             <div class="container">
-                <!--
-                <a class="navbar-brand" href="#">
-                    <img src="png/rooster.png" class="img-fluid logo" alt="" />
-                </a>-->
-                <a href="index.html" class="navbar-brand">Furkan Argün</a>
+                <a href="hakkinda.html" class="navbar-brand">Furkan Argün</a>
                 <!--açılır kapanır buton-->
                 <button
                     class="navbar-toggler ms-auto"
@@ -37,7 +34,7 @@
                             <a class="nav-link dropdown-toggle text-white" href="denizli.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Şehrim</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="denizli.html">Denizli <img src="png/rooster.png" class="img-fluid logo2" alt="" /></a></li>
-                                <li><a class="dropdown-item" href="#">Mirasımız</a></li>
+                                <li><a class="dropdown-item" href="mirasimiz.html">Mirasımız</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="takimlar.html">Takımlar <img src="png/denizlispor.png" class="img-fluid logo2" alt=""> <img src="png/denizli-basket.png" class="img-fluid logo2" alt=""></a></li>
                             </ul>
@@ -49,109 +46,135 @@
                 </div>
             </div>
         </nav>
-        <!--
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">Denizli</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-items d-flex justify-content-between w-100">
-                        <div class="navbar-nav">
-                            <a class="nav-link" aria-current="page" href="index.html">Hakkında</a>
-                            <a class="nav-link" href="sehrim.html">Şehrim</a>
-                            <a class="nav-link" href="#">Mirasımız</a>
-                            <a class="nav-link" href="iletişim.html" tabindex="-1" aria-disabled="true">İletişim</a>
-                        </div>
-                        <a class="nav-link justify-content-end" href="#">Giriş</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        -->
-        <!--
-        <div class="container" style="background-color:rgb(0, 0, 0); text-align: center;">
-            <div class "row">
-                <div class="btn-group" style="background-color:rgb(15, 201, 62)" > 
-                    <a href="index.html"><button type="button" class="btn">HAKKINDA</button></a>
-                    <a href="iletişim.html"><button type="button" class="btn">İLETİŞİM</button></a>
-                    <a href="sehrim.html"><button type="button" class="btn">ŞEHRİM</button></a>
-                    <button type="button" class="btn">MİRASIMIZ</button>
-                    <button type="button" class="btn">BİZE ULAŞIN</button>
-                </div>
-            </div>
-        </div>-->
-
-
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-4 col-lg-5 col-md-5 col-sm-7 col-12">
+                <div class="col-xl-4 col-lg-5 col-md-5 col-sm-7 col-12" style="margin:auto;">
 
+                    <div class="app">
+                        <div class="header">
+                            <h1>DENİZLİ</h1>
+                            <h2>Hava Durumu</h2>
+                            <div id="cizgi"></div>
+                        </div>
+                        <div class="content">
+                            <div class="city">Denizli, TR</div>
+                            <div class="temp"></div>
+                            <div class="humidity"></div>
+                            <div class="desc"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-xl-7 col-lg-6 col-md-7 col-sm-5 col-0 sinir">
                     <h1>DENİZLİ</h1>
-        <p>&emsp;&emsp;&emsp;Denzili 1.040.915 nüfusu ile Türkiyenin Denizli, Türkiye'nin en büyük yirmi üçüncü ilidir.
-        Sanayi, ticaret, tarım, turizm, eğitim, kültür ve sanat alanlarında ülkenin en gelişmiş illerinden biridir. 
-        İl nüfusu 2020 yılı itibarıyla 1.040.915'tir. Tekstil ürünleri ve yöreye has Denizli horozu ile meşhurdur. 
-        Anadolu Yarımadası'nın güneybatı, Ege Bölgesi'nin güneydoğusunda yer almaktadır. 
-        Ege ve Akdeniz Bölgeleri arasında bir geçit durumundadır. 
-        Denizli ilinin her iki bölge üzerinde de toprakları vardır.
-        Denizli ili 28° 38' - 30° 05' doğu meridyenleri (doğu uç noktası; Çivril ilçesi Gümüşsu - Gökgöl Köyü, 
-        Dinar sınırında Efekli Tepe, batı uç Aydın, Manisa; güneyde Muğla; kuzeyde Uşak illeri ile komşudur.) 
-        Yüzölçümü 12.134 km², denizden yüksekliği ise 219 m'dir</p>
-
-        <h2>Gezilecek Yerler</h2>
-        <h4>1) Pamukkale Travertenleri</h4>
-        <p>&emsp;&emsp;&emsp;Pamukkale Travertenleri Denizli il merkezine yaklaşık 20 km uzaklıkta olup, bölgede yer alan termal su 
-            kaynaklarının gün yüzüne çıkınca kimyasal bir tepkime vererek kalsiyum karbonat çökeltisi oluşturmasıyla 
-            meydana gelmiştir. 2 ana kısımda toplanan doğal travertenlere giriş yasak olup ön kısımda bulunan yapay 
-            alanlara ayakkabısız ve terliksiz olarak giriş serbestisi bulunmaktadır. Yılın her mevsimi yerli ve 
-            yabancı turistlerin uğrak noktası olan Pamukkale fotoğrafçıların da gözdesidir. Ayrıca Travertenlerin 
-            arka kısmında yer alan yamaçta yamaç paraşütü de yapılmaktadır. Pamukkale Travertenleri harita bilgisi 
-            için buraya tıklamanız yeterli.</p>
-            
-        <h4>2) Karahayıt - Kırmızı Su</h4>
-        <p>&emsp;&emsp;&emsp;Pamukkale Travertenlerinin 5 km kuzeyinde yer alan Karahayıt için Pamukkale'nin ikiz kardeşi diyebiliriz. 
-            Ancak Karahayıt'ta farklı olarak bikarbonat, sodyum, sülfat, magnezyum ve kalsiyum açısından zengin olan 
-            termal sular kırmızı çökelti oluşturmaktadır. Bu yönüyle Karahayıt'taki termal su "Kırmızı Su" olarak da 
-            bilinmektedir. Eklem ağrıları, artritler gibi pek çok romatizmal hastalığa iyi geldiği hekimlerce 
-            belirtilen Kırmızı Su'ya girmeden Denizli'den dönmemelisiniz. Eğer konaklama imkanınız varsa termal 
-            imkanı bulunan Karahayıt Otellerinde konaklayabilirsiniz.</p>
-        
-        <h4>3) Bağbaşı Yaylası & Teleferik</h4>
-        <p>&emsp;&emsp;&emsp;Şehir merkezinde Bağbaşı mahallesinde bulunan teleferik ile şehri seyrederek Bağbaşı Yaylasına çıkmak 
-            mümkün. Eğer akşam saatlerinde biniyorsanız, teleferikteyken adeta bir ışık denizini andıran Denizli 
-            manzarasının ardından, yukarıda hazır bulunan ring minibüsler ile yaylaya gidebilirsiniz. Yaylada temiz 
-            havanın tadını çıkarırken Macera Parkuru olarak bilinen parkurda eğlenebilir gece isterseniz, yayladaki 
-            bungalow evlerde konaklayabilirsiniz. Bağbaşı Yaylasında isterseniz kendi çadırınızla da konaklama 
-            yapabilirsiniz. Kendi çadırınızı kurmak isterseniz bir günlük çadır kurma bedeli 30 TL şeklindedir.</p>
-        
-        <h4>4) Denizli Nikfer Kayak Merkezi</h4>
-        <p>&emsp;&emsp;&emsp;Denizli Kayak Merkezi, Nikfer Kayak Merkezi ya da Bozdağ Kayak Merkezi adlarıyla bilinen, ziyaretçilerin 
-            henüz üniversal bir adlandırma geliştirmediği il merkezine 85 km uzaklıktaki kayak merkezi, yeni yapılan 
-            tesisleşmeyle birlikte popüler hale gelmektedir. Telesiyej, teleski, kayak pisti, yürüyüş bandı ve kayak 
-            ekipmanı kiralama olanaklarını barındıran kayak merkezi sis ve rüzgar bakımından amatörler için son derece 
-            ideal pistlere sahiptir. Eğer Denizli'ye kışın geliyorsanız Bozdağ Kayak Merkezini mutlaka görmelisiniz! 
-            Kışın zorlu ulaşım koşullarıyla ilgili ise hiç tereddüt etmenize gerek yok! Carpass Oto Kiralama Denizli 
-            Rent A Car SUV'dan, bineğe, yarı ticariden, ticariye kadar geniş araç filosundan aracınızı kiralayarak 
-            zorlu kış koşullarını dize getirip konforlu ulaşımın tadını çıkararak Bozdağ'a gidebilirsiniz.</p>
-       
-
-
-
-        </div>
-       
+                    <hr>
+                    <p>&emsp;&emsp;&emsp;Denzili 1.040.915 nüfusu ile Türkiyenin Denizli, Türkiye'nin en büyük yirmi üçüncü ilidir.
+                        Sanayi, ticaret, tarım, turizm, eğitim, kültür ve sanat alanlarında ülkenin en gelişmiş illerinden biridir. 
+                        İl nüfusu 2020 yılı itibarıyla 1.040.915'tir. Tekstil ürünleri ve yöreye has Denizli horozu ile meşhurdur. 
+                        Anadolu Yarımadası'nın güneybatı, Ege Bölgesi'nin güneydoğusunda yer almaktadır. 
+                        Ege ve Akdeniz Bölgeleri arasında bir geçit durumundadır. 
+                        Denizli ilinin her iki bölge üzerinde de toprakları vardır.
+                        Denizli ili 28° 38' - 30° 05' doğu meridyenleri (doğu uç noktası; Çivril ilçesi Gümüşsu - Gökgöl Köyü, 
+                        Dinar sınırında Efekli Tepe, batı uç Aydın, Manisa; güneyde Muğla; kuzeyde Uşak illeri ile komşudur.) 
+                        Yüzölçümü 12.134 km², denizden yüksekliği ise 219 m'dir</p>
+                    <h2>Denizli horozu</h2>
+                    <hr>
+                        <p>&emsp;&emsp;&emsp;Denizli horozu, Denizli iline özgü, yerel Tavuk Irkları'ndan biri ve horoz ırkıdır. Uzun ve ahenkli ötüşüyle diğer ırklardan ayrılır. 
+                            Yöre halkının yetiştirmek için uzun öten horozları tercih etmesiyle zamanla kendiliğinden oluşmuş bir ırktır.</p>
+                            
+                        <p>&emsp;&emsp;&emsp;Osmanlı zamanında Arnavutluk'tan getirilen uzun öten Berat horozunun Denizli'de yerli ırklarla karışması ile oluştuğu iddia edilmektedir. 
+                            Fakat vücut yapısı, renk ve görünüş açısından bir benzerlikleri yoktur. Denizli çevresinde çıkarılan MS 2. yüzyıla ait yazıtlarda horoz motiflerine 
+                            rastlanmaktadır. Denizli horozlarının birinci yıldaki ötüş uzunluğu 20-25 sn uzunluğundadır. Aşağıdaki kısımdan sesini dinleyebilirsiniz.</p>
+                            <audio controls>
+                                <source src="mp3/rooster.mp3" type="audio/mpeg">
+                                Tarayıcınız audio etiketini desteklemiyor!..
+                            </audio>
                 </div>
-                <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0">
-                    
+                <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0"></div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-5 col-md-5 col-sm-7 col-12">
+                    <div class="container">
+                        <div id="imgDenizliKonum">
+                             <img src="png/denizli-konum.png" class="figure-img img-fluid rounded" alt="">
+                        </div>
+                    </div>
+                    <div class="container sporTable">
+                        <table class="denizliTable" border="2px" style="border-color: white;">
+                            <tr>
+                                <th>Ülke</th>
+                                <td>Türkiye</td>
+                            </tr>
+                            <tr>
+                                <th>Bölge</th>
+                                <td>Ege Bölgesi</td>
+                            </tr>
+                            <tr>
+                                <th>Büyükşehir Belediye Başkanı&emsp;</th>
+                                <td>Osman Zolan</td>
+                            </tr>
+                            <tr>
+                                <th>Vali</th>
+                                <td>Ali Fuat Atik</td>
+                            </tr>
+                            <tr>
+                                <th>Rakım</th>
+                                <td>354 m (1.161 ft)</td>
+                            </tr>
+                            <tr>
+                                <th>Nüfus</th>
+                                <td>1.040.915</td>
+                            </tr>
+                            <tr>
+                                <th>Posta kodu</th>
+                                <td>20XXX</td>
+                            </tr>
+                            <tr>
+                                <th>Alan kodu</th>
+                                <td>(+90) 258</td>
+                            </tr>
+                            <tr>
+                                <th>Plaka kodu</th>
+                                <td>20</td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <th colspan="2">Resmi Site</th>
+    
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td colspan="2"><a href="http://www.denizli.gov.tr/" target="_blank">www.denizli.gov.tr</a></td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td colspan="2"><a href="https://www.denizli.bel.tr/" target="_blank">www.denizli.bel.tr</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-7 col-md-7 col-sm-5 col-0 sinir">
+                    <p>Canlı ağırlığı 3-3,5 kg olan horozların gözleri siyah sürmelidir. Renk, ibik ve vücut yapısına göre üç gruba ayrılırlar.</p>
+                    <ul>
+                        <li>Renklerine göre altı tipi vardır: Pamukkır, demirkır, al, siyah, kınalı, kürklü.</li>
+                        <li>Vücut tipine göre: Yüksek boyun, küpeli, sülün olmak üzere üç tipi bulunur.</li>
+                        <li>İbik durumuna göre: Dar ibik, geniş ibik tipleri bulunur. Gül ibik tipi zamanla kaybolmuştur.</li>
+                    </ul>
+                    <p>Horozların ses tonları üçe ayrılır; davudi, ince, kalın. Ötüş niteliğine göre; hüzünlü ses, net ses, dalgalı ses, cırtlak ses olarak dörde ayrılır.
+                         Ötüş sırasında vücut şekline göre; Kurt ötüşü, Aslan ötüşü, pus ötüşü, yiğit ötüşü gibi sınıflandırma yapılır. 
+                         Kesik-kesik ötüş tipi yalancı ötüş olarak adlandırılır ve makbul değildir.</p>
+                    <p>Tavukları 2-2,5 kg ağırlığında, yumurta verimi yıllık 90-130 adettir. Yumurtlamaya 6. ayda başlarlar. Yumurta ağırlığı 55-60 gramdır. 
+                        Tüyleri genelde siyahtır, boyunlarda kirli beyaz, kırçıllı renk bulunabilir. Bacaklar gri, gözler sürmeli ve siyahtır. 
+                        Civcivleri ilk başta siyahtır. Bir ay sonra tüylerini dökerler, 15 gün tüysüz kaldıktan sonra yeni tüyleri çıkmaya başlar. 
+                        Yeni tüyleri siyah olanlar tavuk, renkli olanlar horozdur.</p>
+                    <p>Türkiye'de ünü oldukça yayılan Denizi horozu yoğun talep görmekte ve yüksek fiyata alıcı bulabilmektedir. 
+                        Denizli horozu ırkının korunması ve çoğaltılması için çalışmalar yapılmaktadır.</p>
+                <h2><br>Gezilecek Yerler</h2>
+                <hr>
+                </div>
+                <div class="col-xl-3 col-lg-0 col-md-0 col-sm-0 col-0">
+                    <div class="container">
+                        <img style="max-height: 500px; text-align: center;" src="png/rooster2.jpg" class="figure-img img-fluid rounded" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="icerik">
-            
-       
         <div id="slider">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -162,31 +185,32 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="png/pamukkale-travertenleri.jpg" class="d-block w-60 container-fluid" alt="">
+                        <a href="pamukkale.html"><img src="png/pamukkale-travertenleri.jpg" class="d-block w-60 container-fluid" alt=""> </a>
+                        
                         <div class="carousel-caption d-none d-md-block">
                           <h5>Pamukkale Travertenleri</h5>
-                          <p></p>
+                          <p>Ayrıntılar için resmin üzerine tıklayabilirsiniz</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="png/karahayit.jpg" class="d-block w-60 container-fluid" alt="">
+                        <a href="karahayit.html"><img src="png/karahayit.jpg" class="d-block w-60 container-fluid" alt=""></a>
                         <div class="carousel-caption d-none d-md-block">
                           <h5>Karahayıt</h5>
-                          <p></p>
+                          <p>Ayrıntılar için resmin üzerine tıklayabilirsiniz</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="png/bagbasi-yaylasi-teleferik.jpg" class="d-block w-60 container-fluid" alt="">
+                        <a href="bagbasi-yaylasi.html"><img src="png/bagbasi-yaylasi-teleferik.jpg" class="d-block w-60 container-fluid" alt=""></a>
                         <div class="carousel-caption d-none d-md-block">
                           <h5>Bağbaşı Yaylası Teleferik</h5>
-                          <p></p>
+                          <p>Ayrıntılar için resmin üzerine tıklayabilirsiniz</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="png/denizli-kayak-merkezi.jpg" class="d-block w-60 container-fluid" alt="">
+                        <a href="denizli-kayak-merkezi.html"><img src="png/denizli-kayak-merkezi.jpg" class="d-block w-60 container-fluid" alt=""></a>
                         <div class="carousel-caption d-none d-md-block">
                           <h5>Denizli Kayak Merkezi</h5>
-                          <p></p>
+                          <p>Ayrıntılar için resmin üzerine tıklayabilirsiniz</p>
                         </div>
                     </div>
                 </div>
@@ -200,8 +224,7 @@
                 </button>
             </div>
         </div>
-        
-            
+        <script src="js/havaDurumu.js"></script>
         <script src="js/bootstrap.js"></script>
     </body>
 </html>

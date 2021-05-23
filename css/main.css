@@ -1,0 +1,64 @@
+body {
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.personal-info {
+  margin:0 auto;
+}
+
+.personal-info ul {
+  border: 1px solid black;
+  width: 50%;
+  min-width: 300px;
+  padding: 40px;
+  margin-left: 5px;
+}
+
+.personal-info h3 {
+  background-color: blue;
+  min-width: 100px;
+  font-weight: 500;
+  padding: 10px;
+  color: white;
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+  bottom: -8px;
+  border: 1px solid transparent;
+  width: 8%;
+  margin-left: 6px;
+  font-size: 14pt;
+}
+
+.personal-info span {
+  position: absolute;
+  left: 25%;
+  color: red;
+  margin-left: 40px;
+}
+
+.container-cv ul li {
+  list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .personal-info ul {
+    padding-left: 0;
+    width: 80%;
+  }
+  .personal-info span {
+    left: 25%;
+  }
+  .personal-info {
+    margin-left: 0px;
+    padding: 0;
+    font-size: 10pt;
+  }
+}
+
+@media (min-width: 601px) and (max-width:950px) { 
+  .personal-info ul {
+    padding-left: 0;
+    width: 80%;
+ }
+}
