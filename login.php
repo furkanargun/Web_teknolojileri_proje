@@ -7,7 +7,7 @@
         $_SESSION["login"] = "true";
         $_SESSION["user"] = $user;
         $_SESSION["pass"] = $pass;
-        echo "HoşGeldiniz $user <br>";
+        echo "Hoş Geldiniz $user <br>";
         echo "Anasayfaya yönlendiriliyorsunuz.";
         header("Refresh: 2; url=hakkinda.html");
     }

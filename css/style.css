@@ -1,22 +1,5 @@
-.pic{
-
-    overflow: hidden;
-    background-image:url("png/denizlispor2");
-    background-size:200px 200px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
-    box-shadow: 0 0 10px rgba(0,0,0,.3);
-}
-.pic{
-   
-    -webkit-transition:all 1s ease;
-    -moz-transition:all 1s ease;
-    -o-transition:all 1s ease;
-    -ms-transition:all 1s ease;
-    transition:all 1s ease;
-}
-.pic.hover{
-    opacity:0;
+.picture:hover{
+    opacity:30%;   
 }
 .otobiyografi{
     text-align: center;
@@ -64,7 +47,6 @@ div.sinir{
     padding-top: 25px;
     color: white;
 }
-
 div.resim-bir{
     position:absolute;
 }
